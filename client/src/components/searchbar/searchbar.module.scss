@@ -27,10 +27,6 @@
         display: none;
     }
 
-    input {
-        border: 1px solid magenta;
-    }
-
     &::placeholder {
         color: $placeholder-color-primary;
     }
