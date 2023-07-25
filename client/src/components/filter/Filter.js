@@ -8,7 +8,7 @@ const Filter = () => {
     return (
         <div className={styles['container']}>
             {
-                lists.map(item => <FilterItem name={item} />)
+                lists.map((item, index) => <FilterItem key={index} name={item} />)
             }
         </div>
     )

@@ -10,7 +10,6 @@ const ProductShowcase = () => {
         const fetchData = async () => {
             try {
                 const response = await productFinder.get('/');
-                console.log(response.data.data.products);
                 setProducts(response.data.data.products);
             } catch (err) {
                 console.log(err);
