@@ -1,0 +1,18 @@
+@import '../../variables';
+
+.container {
+    padding: 5px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 5px;
+}
+
+.price {
+    color: $text-color-third;
+    font-size: 1.25em;
+}

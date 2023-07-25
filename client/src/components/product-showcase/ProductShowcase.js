@@ -45,7 +45,7 @@ const ProductShowcase = () => {
     return (
         <div className={styles['container']}>
             {
-                products.map(product => <ProductCard />)
+                products.map(product => <ProductCard name={product.name} price={product.price} />)
             }
         </div>
     )
