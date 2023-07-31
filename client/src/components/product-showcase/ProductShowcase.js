@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import styles from './productShowcase.module.scss';
 import ProductCard from '../product-card/ProductCard';
 import productFinder from '../../api/productFinder';
+import { ProductsContext } from '../../context/ProductsContext';
 
-const ProductShowcase = () => {
-    const [products, setProducts] = useState([]);
+const ProductShowcase = (props) => {
+    const { products, setProducts } = useContext(ProductsContext);
 
     useEffect(() => {
         const fetchData = async () => {
